@@ -11,8 +11,8 @@ const OurServices = () => {
               <div className='mb-14'>
                 <h2 className='text-xl sm:text-3xl lg:text-4xl text-white mb-7'>خدمات ما</h2>
                 <span className='text-accents_6'>
-                  We offer a wide range of translation services and provide complete client
-                  satisfaction
+                  ما دامنهٔ وسیعی از خدمات ترجمه را فراهم نموده و رضایت مشتری را بطور کامل تأمین می
+                  نماییم
                 </span>
               </div>
             </Fade>
