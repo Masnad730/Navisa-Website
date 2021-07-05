@@ -65,7 +65,7 @@ const Header = ({ activePage }) => {
                           />
                         </svg>
                         <ul className='hidden opacity-0 text-right absolute right-0 top-0 z-50 mt-8 py-5 w-64 max bg-white shadow-lg border border-accents_2 group-hover:block group-hover:opacity-100'>
-                          <li className='px-7 py-1.5 flex'>
+                          <li className='px-7 py-1.5 flex justify-end'>
                             <Link href='/dr/translation'>
                               <a
                                 className={
@@ -78,7 +78,7 @@ const Header = ({ activePage }) => {
                               </a>
                             </Link>
                           </li>
-                          <li className='px-7 py-1.5 flex'>
+                          <li className='px-7 py-1.5 flex justify-end'>
                             <Link href='/dr/website-localization'>
                               <a
                                 className={
@@ -91,7 +91,7 @@ const Header = ({ activePage }) => {
                               </a>
                             </Link>
                           </li>
-                          <li className='px-7 py-1.5 flex'>
+                          <li className='px-7 py-1.5 flex justify-end'>
                             <Link href='/dr/transcription'>
                               <a
                                 className={
@@ -104,7 +104,7 @@ const Header = ({ activePage }) => {
                               </a>
                             </Link>
                           </li>
-                          <li className='px-7 py-1.5 flex'>
+                          <li className='px-7 py-1.5 flex justify-end'>
                             <Link href='/dr/professional-proofreading'>
                               <a
                                 className={
