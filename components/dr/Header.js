@@ -16,11 +16,13 @@ const Header = ({ activePage }) => {
   }
 
   useEffect(() => {
-    if (language === 'dari') {
-      router.push('/dr')
-    } else router.push('/')
-    console.log('from useEffect::::' + language)
-  }, [language])
+    if (router.isReady) {
+      if (language === 'english') {
+        router.push('/')
+      }
+      console.log('from useEffect::::' + language)
+    }
+  }, [language, router.isReady])
   return (
     <header className='border-b border-accents_4'>
       <div className='py-4'>

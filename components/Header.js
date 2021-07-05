@@ -16,11 +16,13 @@ const Header = ({ activePage }) => {
   }
 
   useEffect(() => {
-    if (language === 'dari') {
-      router.push('/dr')
-    } else router.push('/')
-    console.log('from useEffect::::' + language)
-  }, [language])
+    if (router.isReady) {
+      if (language === 'dari') {
+        router.push('/dr')
+      }
+      console.log('from useEffect::::' + language)
+    }
+  }, [language, router.isReady])
   return (
     <header className='w-full'>
       <div className='py-4'>
