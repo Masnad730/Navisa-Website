@@ -21,28 +21,28 @@ const Footer = () => {
               <ul className='text-medium'>
                 <Fade up>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/translation'>
                       <a>Translation Services</a>
                     </Link>
                   </li>
                 </Fade>
                 <Fade up>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/website-localization'>
                       <a>Website Localization</a>
                     </Link>
                   </li>
                 </Fade>
                 <Fade up>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/transcription'>
                       <a>Transcription Services</a>
                     </Link>
                   </li>
                 </Fade>
                 <Fade up>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/professional-proofreading'>
                       <a>Professional Proofreading</a>
                     </Link>
                   </li>
@@ -56,14 +56,14 @@ const Footer = () => {
               <ul className='text-medium'>
                 <Fade up>
                   <li className='mb-3'>
-                    <Link href='#'>
+                    <Link href='/about'>
                       <a>About Us</a>
                     </Link>
                   </li>
                 </Fade>
                 <Fade up>
                   <li className='mb-3'>
-                    <Link href='#'>
+                    <Link href='/contact'>
                       <a>Contact Us</a>
                     </Link>
                   </li>

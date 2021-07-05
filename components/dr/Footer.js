@@ -76,22 +76,22 @@ const Footer = () => {
               <ul className='text-medium'>
                 <Fade up>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/dr/translation'>
                       <a>خدمات ترجمه</a>
                     </Link>
                   </li>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/dr/website-localization'>
                       <a>محلی سازی وب سایت</a>
                     </Link>
                   </li>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/dr/transcription'>
                       <a>خدمات رونویسی</a>
                     </Link>
                   </li>
                   <li className='ml-6 mb-3'>
-                    <Link href='#'>
+                    <Link href='/dr/professional-proofreading'>
                       <a>تصحیح مسلکی</a>
                     </Link>
                   </li>
