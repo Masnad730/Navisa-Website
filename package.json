@@ -8,9 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "latest",
+    "nprogress": "^0.2.0",
+    "rc-collapse": "^3.1.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-accessible-accordion": "^3.3.4",
+    "react-collapsible": "^2.8.3",
+    "react-dom": "^17.0.2",
+    "react-loader-spinner": "^4.0.0",
+    "react-responsive-carousel": "^3.2.19",
+    "react-reveal": "^1.2.2",
+    "react-simple-snackbar": "^1.1.11"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.4",
