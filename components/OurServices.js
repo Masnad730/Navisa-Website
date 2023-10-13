@@ -9,19 +9,19 @@ const OurServices = () => {
           <div className='col-md-8 offset-md-2 text-center'>
             <Fade up>
               <div className='mb-14'>
-                <h2 className='text-xl sm:text-3xl lg:text-4xl text-white mb-7'>What We Offer</h2>
-                <span className='text-accents_6'>
+                <h2 className='text-2xl sm:text-3xl lg:text-4xl text-white mb-7'>What We Offer</h2>
+                <p className='text-accents_6 text-sm md:text-medium lg:text-base'>
                   We offer a wide range of translation services and provide complete client
                   satisfaction
-                </span>
+                </p>
               </div>
             </Fade>
           </div>
         </div>
         <Fade right>
-          <div className='bg-white text-black text-center w-full'>
+          <div className='bg-white text-black text-center w-full rounded-md'>
             <div className='row margin-l-0 margin-r-0'>
-              <div className='col-lg-3 col-md-3 border border-accents_4 border-r-0 last:border-r-0'>
+              <div className='col-lg-3 col-md-6 border border-accents_6 lg:border-accents_4 border-r-0 last:border-r-0 border-t-0 last:border-b-0'>
                 <article className='pt-8 pb-12 px-2'>
                   <div className='text-primary svc-icon'>
                     <i className='flaticon-translation'></i>
@@ -29,19 +29,21 @@ const OurServices = () => {
                   <h4 className='text-base sm:text-lg lg:text-xl mb-8 uppercase font-bold'>
                     Translation Services
                   </h4>
-                  <p className='text-base text-accents_6 font-medium leading-relaxed mt-3'>
+                  <p className='text-sm md:text-medium lg:text-base text-accents_6 font-medium leading-relaxed mt-3'>
                     Navisa provides fast and accurate translation services for the supported
                     languages.
                   </p>
 
                   <div className='mt-10'>
                     <Link href='/translation'>
-                      <a className='bg-accents_3 px-5 py-3'>Read More</a>
+                      <a className='bg-accents_3 px-5 py-3 text-sm md:text-medium lg:text-base'>
+                        Read More
+                      </a>
                     </Link>
                   </div>
                 </article>
               </div>
-              <div className='col-lg-3 col-md-3 border border-accents_4 border-r-0 last:border-r-0'>
+              <div className='col-lg-3 col-md-6 border border-accents_6 lg:border-accents_4 border-r-0 last:border-r-0 border-t-0 last:border-b-0'>
                 <article className='pt-8 pb-12 px-2'>
                   <div className='text-primary svc-icon'>
                     <i className='flaticon-website'></i>
@@ -49,18 +51,20 @@ const OurServices = () => {
                   <h4 className='text-base sm:text-lg lg:text-xl mb-8 uppercase font-bold'>
                     Website Localization
                   </h4>
-                  <p className='text-base text-accents_6 font-medium leading-relaxed mt-3'>
+                  <p className='text-sm md:text-medium lg:text-base text-accents_6 font-medium leading-relaxed mt-3'>
                     Website localization is the process of tailoring a website to a particular
                     audience.
                   </p>
                   <div className='mt-10'>
                     <Link href='/website-localization'>
-                      <a className='bg-accents_3 px-5 py-3'>Read More</a>
+                      <a className='bg-accents_3 px-5 py-3 text-sm md:text-medium lg:text-base'>
+                        Read More
+                      </a>
                     </Link>
                   </div>
                 </article>
               </div>
-              <div className='col-lg-3 col-md-3 border border-accents_4 border-r-0 last:border-r-0'>
+              <div className='col-lg-3 col-md-6 border border-accents_6 lg:border-accents_4 border-r-0 last:border-r-0 border-t-0 last:border-b-0'>
                 <article className='pt-8 pb-12 px-2'>
                   <div className='text-primary svc-icon'>
                     <i className='flaticon-transcript'></i>
@@ -68,17 +72,19 @@ const OurServices = () => {
                   <h4 className='text-base sm:text-lg lg:text-xl mb-8 uppercase font-bold'>
                     Transcription Services
                   </h4>
-                  <p className='text-base text-accents_6 font-medium leading-relaxed mt-3'>
+                  <p className='text-sm md:text-medium lg:text-base text-accents_6 font-medium leading-relaxed mt-3'>
                     Our team of experts offer human-generated, fast, timely, and superb-quality
                   </p>
                   <div className='mt-10'>
                     <Link href='/transcription'>
-                      <a className='bg-accents_3 px-5 py-3'>Read More</a>
+                      <a className='bg-accents_3 px-5 py-3 text-sm md:text-medium lg:text-base'>
+                        Read More
+                      </a>
                     </Link>
                   </div>
                 </article>
               </div>
-              <div className='col-lg-3 col-md-3 border border-accents_4 border-r-0 last:border-r-0'>
+              <div className='col-lg-3 col-md-6 border border-accents_6 lg:border-accents_4 border-r-0 last:border-r-0 border-t-0 last:border-b-0'>
                 <article className='pt-8 pb-12 px-2'>
                   <div className='text-primary svc-icon'>
                     <i className='flaticon-proofreading'></i>
@@ -86,13 +92,15 @@ const OurServices = () => {
                   <h4 className='text-base sm:text-lg lg:text-xl mb-8 uppercase font-bold'>
                     Professional Proofreading
                   </h4>
-                  <p className='text-base text-accents_6 font-medium leading-relaxed mt-3'>
+                  <p className='text-sm md:text-medium lg:text-base text-accents_6 font-medium leading-relaxed mt-3'>
                     Your digital and physical assets including your website, blogs, official
                     documents
                   </p>
                   <div className='mt-10'>
                     <Link href='/professional-proofreading'>
-                      <a className='bg-accents_3 px-5 py-3'>Read More</a>
+                      <a className='bg-accents_3 px-5 py-3 text-sm md:text-medium lg:text-base'>
+                        Read More
+                      </a>
                     </Link>
                   </div>
                 </article>

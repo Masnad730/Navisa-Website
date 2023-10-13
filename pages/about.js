@@ -14,13 +14,81 @@ import CTA from '../components/CTA'
 
 export default function Home() {
   return (
-    <Layout activePage='about'>
+    <Layout
+      title='About Us - Navisa Translation Services'
+      canonical='https://navisa.af/about/'
+      descriptionContent='Navisa Translation Services (Navisa) is a local company in Afghanistan that mainly operates in the areas of translation, website localization, transcription, and proofreading.'
+      jsonLD='{
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://navisa.af/#website",
+            "url": "https://navisa.af/",
+            "name": "Navisa Translation Services",
+            "description": "a local company in Afghanistan that mainly operates in the area of translation services",
+            "publisher": { "@id": "https://navisa.af/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://navisa.af/#organization",
+            "legalName": "Navisa Translation Services",
+            "url": "https://navisa.af/",
+            "logo": "https://navisa.af/images/navisa-logo.png"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://navisa.af/#breadcrumblist",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "@id": "https://navisa.af/#listItem",
+                "position": 1,
+                "item": {
+                  "@type": "WebPage",
+                  "@id": "https://navisa.af/#item",
+                  "name": "Home",
+                  "description": "Navisa Translation Services (Navisa) is a local company in Afghanistan that mainly operates in the area of translation services.",
+                  "url": "https://navisa.af/"
+                }
+              },
+
+              {
+                "@type": "ListItem",
+                "@id": "https://navisa.af/about/#listItem",
+                "position": 2,
+                "item": {
+                  "@type": "WebPage",
+                  "@id": "https://navisa.af/about/#item",
+                  "name": "About",
+                  "description": "Navisa Translation Services (Navisa) is a local company in Afghanistan that mainly operates in the areas of translation, website localization, transcription, and proofreading.",
+                  "url": "https://navisa.af/about/"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://navisa.af/about/#webpage",
+            "url": "https://navisa.af/about/",
+            "name": "About",
+            "description": "Navisa Translation Services (Navisa) is a local company in Afghanistan that mainly operates in the areas of translation, website localization, transcription, and proofreading.",
+            "inLanguage": "en-US",
+            "isPartOf": { "@id": "https://navisa.af/#website" },
+            "breadcrumb": { "@id": "https://navisa.af/#breadcrumblist" },
+            "datePublished":"2021-1-27T10:03:55+00:00",
+            "dateModified":"2021-13-16T07:23:07+00:00"
+          }
+        ]
+      }'
+      activePage='about'
+    >
       <section className='text-white svc-bg-image'>
         <div className='pt-20 pb-10'>
           <div className='container'>
             <Fade up>
               <div>
-                <h6 className='text-xs sm:text-sm lg:text-base text-white uppercase pl-16 mb-4 relative title-decorated'>
+                <h6 className='text-sm sm:text-sm lg:text-base text-white uppercase pl-16 mb-4 relative title-decorated'>
                   about us
                 </h6>
                 <h1 className='text-2xl sm:text-4xl lg:text-5xl text-white font-extrabold pl-12 mb-8'>
@@ -29,7 +97,7 @@ export default function Home() {
               </div>
             </Fade>
             <Fade right>
-              <ul className='flex items-center text-primary-2'>
+              <ul className='flex items-center text-primary-2 text-sm sm:text-sm lg:text-base'>
                 <li className='pl-0 px-4 relative breadcrumb-arr'>
                   <Link href='/'>
                     <a className='hover:text-primary'>Home</a>
@@ -43,9 +111,9 @@ export default function Home() {
       </section>
       <div className='bg-accents_0'>
         <div className='container'>
-          <div className='row py-20'>
+          <div className='row py-12 md:py-16 lg:py-20'>
             <div className='col-xl-6 col-lg-6'>
-              <div>
+              <div className='mb-12 lg:mb-0'>
                 <Fade up>
                   <h2 className='text-xl sm:text-3xl lg:text-4xl mb-4 py-4 tracking-wider uppercase'>
                     A few words about us
@@ -71,27 +139,27 @@ export default function Home() {
                     <div className='row justify-center'>
                       <div className='col-md-4'>
                         <div className='bg-accents_2 w-24 h-24 flex items-center justify-center rounded-full mx-auto mt-0 mb-7'>
-                          <img src='/images/flags/afghanistan.png' alt='' />
+                          <img src='/images/flags/afghanistan.png' alt='Pashto/Dari' />
                         </div>
                       </div>
                       <div className='col-md-4'>
                         <div className='bg-accents_2 w-24 h-24 flex items-center justify-center rounded-full mx-auto mt-0 mb-7'>
-                          <img src='/images/flags/united-kingdom.png' alt='' />
+                          <img src='/images/flags/united-kingdom.png' alt='English' />
                         </div>
                       </div>
                       <div className='col-md-4'>
                         <div className='bg-accents_2 w-24 h-24 flex items-center justify-center rounded-full mx-auto mt-0 mb-7'>
-                          <img src='/images/flags/saudi-arabia.png' alt='' />
+                          <img src='/images/flags/saudi-arabia.png' alt='Arabic' />
                         </div>
                       </div>
                       <div className='col-md-4'>
                         <div className='bg-accents_2 w-24 h-24 flex items-center justify-center rounded-full mx-auto mt-0 mb-7'>
-                          <img src='/images/flags/turkey.png' alt='' />
+                          <img src='/images/flags/turkey.png' alt='Turkish' />
                         </div>
                       </div>
                       <div className='col-md-4'>
                         <div className='bg-accents_2 w-24 h-24 flex items-center justify-center rounded-full mx-auto mt-0 mb-7'>
-                          <img src='/images/flags/iran.png' alt='' />
+                          <img src='/images/flags/iran.png' alt='Persian' />
                         </div>
                       </div>
                     </div>
@@ -118,8 +186,8 @@ export default function Home() {
           <div className='row'>
             <div className='col-md-4'>
               <Fade left>
-                <div>
-                  <img src='/images/industry.jpg' alt='' />
+                <div className='mb-12 lg:mb-0'>
+                  <img src='/images/industry.jpg' alt='Industries cover by navisa' />
                 </div>
               </Fade>
             </div>
@@ -127,7 +195,7 @@ export default function Home() {
               <div>
                 <div className='mb-10'>
                   <Fade up>
-                    <h2 className='text-2xl sm:text-4xl lg:text-5xl mb-6'>Industries</h2>
+                    <h2 className='text-2xl sm:text-3xl lg:text-4xl mb-6'>Industries</h2>
                     <p className='text-paragraph'>
                       Navisa provides translation and other related services that cover industries
                       such as business and finance, medical and healthcare, legal services,
@@ -145,7 +213,7 @@ export default function Home() {
                           </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
-                          <div className='bg-tertiary p-8'>
+                          <div className='bg-tertiary p-4 lg:p-8'>
                             <p>
                               Navisa Translation Services provides a comprehensive support for
                               translation of all your business and finance content, including but
@@ -187,12 +255,12 @@ export default function Home() {
                           </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
-                          <div className='bg-tertiary p-8'>
+                          <div className='bg-tertiary p-4 lg:p-8'>
                             <p>
                               Navisa Translation Services provides medical and healthcare related
-                              translation, which covers from patient case reports to packaging
-                              labels for medicines at an affordable rate. Our services in this
-                              industry, includes:
+                              translation services, which covers from patient case reports to
+                              packaging labels for medicines at an affordable rate. Our services in
+                              this industry, includes:
                             </p>
                             <ul className='row mt-4'>
                               <li className='col-md-6 flex items-center mb-3'>
@@ -227,7 +295,7 @@ export default function Home() {
                           </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
-                          <div className='bg-tertiary p-8'>
+                          <div className='bg-tertiary p-4 lg:p-8'>
                             <p>
                               Our team of professionals with a deep knowledge of legal practices and
                               issues, specially the Afghanistan Laws, makes sure that all your legal
@@ -266,7 +334,7 @@ export default function Home() {
                           </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
-                          <div className='bg-tertiary p-8'>
+                          <div className='bg-tertiary p-4 lg:p-8'>
                             <p>
                               We ensure that your marketing materials are translated in a way to
                               keep their original impact with no effectiveness loss in the
@@ -310,7 +378,7 @@ export default function Home() {
                           </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
-                          <div className='bg-tertiary p-8'>
+                          <div className='bg-tertiary p-4 lg:p-8'>
                             <p>
                               Our team of linguists are fully capable to translate a wide range of
                               content related to technical and engineering industry, which includes:

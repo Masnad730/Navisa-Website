@@ -7,13 +7,18 @@ import ServicesNavMenu from '../components/ServicesNavMenu'
 
 export default function Translation() {
   return (
-    <Layout activePage='transcription'>
+    <Layout
+      title='Transcription Services - Navisa Translation Services'
+      canonical='https://navisa.af/transcription/'
+      descriptionContent='Our team of experts offer human-generated, fast, timely, and superb-quality transcription services for your audio and video contents. Timely transcription of your meetings, customers’ feedbacks, and visual content '
+      activePage='transcription'
+    >
       <section className='text-white svc-bg-image'>
         <div className='pt-20 pb-10'>
           <div className='container'>
             <Fade up>
               <div className=''>
-                <h6 className='text-xs sm:text-sm lg:text-base text-white uppercase pl-16 mb-4 relative title-decorated'>
+                <h6 className='text-sm sm:text-sm lg:text-base text-white uppercase pl-16 mb-4 relative title-decorated'>
                   Services
                 </h6>
                 <h1 className='text-2xl sm:text-4xl lg:text-5xl text-white font-extrabold pl-12 mb-8'>
@@ -22,7 +27,7 @@ export default function Translation() {
               </div>
             </Fade>
             <Fade right>
-              <ul className='flex items-center text-primary-2'>
+              <ul className='flex items-center text-primary-2 text-sm sm:text-sm lg:text-base'>
                 <li className='pl-0 px-4 relative breadcrumb-arr'>
                   <Link href='/'>
                     <a className='hover:text-primary'>Home</a>
@@ -40,7 +45,7 @@ export default function Translation() {
             <div className='col-lg-4 order-2 order-lg-1'>
               <Fade right>
                 <aside className='border-2 border-accents_2'>
-                  <div className='px-4 py-6'>
+                  <div className='px-8 lg:px-2 xl:px-6 py-6'>
                     <ServicesNavMenu active='transcription' />
                   </div>
                 </aside>
@@ -49,12 +54,12 @@ export default function Translation() {
             <div className='col-lg-8 order-1 order-lg-2'>
               <Fade right>
                 <div>
-                  <img src='/images/services/transcription.jpg' alt='' />
+                  <img src='/images/services/transcription.jpg' alt='Transcription Services' />
                 </div>
               </Fade>
               <Fade up>
                 <div className='pt-10'>
-                  <p className='leading-8 mb-3 last:mb-0'>
+                  <p className='leading-8 mb-3 last:mb-0 text-sm md:text-medium lg:text-base'>
                     Our team of experts offer human-generated, fast, timely, and superb-quality
                     transcription services for your audio and video contents. Transcription is
                     basically writing down everything in the audio or video. It includes notes of
@@ -66,13 +71,13 @@ export default function Translation() {
                   </p>
                 </div>
                 <div>
-                  <span className='block my-4'>
+                  <span className='block my-4 text-sm md:text-medium lg:text-base'>
                     Here are some of the primary industries we provide transcription services to:
                   </span>
                   <div className='row'>
                     <div className='col-xl-4 col-md-12'>
                       <h4 className='text-base sm:text-lg lg:text-xl mb-4'>Legal</h4>
-                      <ul>
+                      <ul className='text-sm md:text-medium lg:text-base'>
                         <li className='mb-2 flex items-center'>
                           <i className='flaticon-tick mr-3'></i>
                           Court hearings
@@ -89,7 +94,7 @@ export default function Translation() {
                     </div>
                     <div className='col-xl-4 col-md-12'>
                       <h4 className='text-base sm:text-lg lg:text-xl mb-4'>Business</h4>
-                      <ul>
+                      <ul className='text-sm md:text-medium lg:text-base'>
                         <li className='mb-2 flex items-center'>
                           <i className='flaticon-tick mr-3'></i> Conferences
                         </li>
@@ -106,7 +111,7 @@ export default function Translation() {
                       <h4 className='text-base sm:text-lg lg:text-xl mb-4'>
                         Media & Communication
                       </h4>
-                      <ul>
+                      <ul className='text-sm md:text-medium lg:text-base'>
                         <li className='mb-2 flex items-center'>
                           <i className='flaticon-tick mr-3'></i> Movies
                         </li>
@@ -124,7 +129,7 @@ export default function Translation() {
                   <h3 className='text-lg sm:text-xl lg:text-2xl mb-4'>
                     Audio and Video Transcription
                   </h3>
-                  <p className='leading-8'>
+                  <p className='leading-8 text-sm md:text-medium lg:text-base'>
                     Transcription is basically writing down everything in the audio or video. It
                     includes notes of who is speaking and of any other significant sounds used
                     during the audio and video.
@@ -132,7 +137,7 @@ export default function Translation() {
                 </div>
                 <div className='py-8'>
                   <h3 className='text-lg sm:text-xl lg:text-2xl mb-4'>Video Subtitling</h3>
-                  <p className='leading-8'>
+                  <p className='leading-8 text-sm md:text-medium lg:text-base'>
                     Subtitling enables viewers of other nationalities to follow what is happening in
                     the video by writing out what is said in the video in another language, and we
                     are here to do it for you.

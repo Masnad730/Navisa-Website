@@ -6,42 +6,48 @@ const Footer = () => {
     <footer className='bg-secondary text-white py-16'>
       <div className='container'>
         <div className='row'>
-          <div className='col-md-3 flex flex-col justify-between'>
-            <div>
+          <div className='col-lg-3 col-md-6 lg:flex lg:justify-center mb-12 last:mb-0'>
+            <div className=''>
               <Link href='/'>
                 <a>
-                  <img className='w-36' src='/images/navisa-logo-white.png' alt='' />
+                  <img
+                    className='w-20 md:w-28 lg:w-36'
+                    src='/images/navisa-logo-white.png'
+                    alt='Navisa Translation Services'
+                  />
                 </a>
               </Link>
             </div>
           </div>
-          <div className='col-md-3'>
-            <div>
-              <h4 className='text-base sm:text-lg lg:text-xl text-current mb-5 ml-6'>Services</h4>
-              <ul className='text-medium'>
+          <div className='col-lg-3 col-md-6 lg:flex lg:justify-center mb-12 last:mb-0'>
+            <div className=''>
+              <h4 className='text-base sm:text-lg lg:text-xl text-current mb-5 ml-0 lg:ml-6'>
+                Services
+              </h4>
+              <ul className='text-medium text-accents_4'>
                 <Fade up>
-                  <li className='ml-6 mb-3'>
+                  <li className='ml-0 lg:ml-6 mb-3'>
                     <Link href='/translation'>
                       <a>Translation Services</a>
                     </Link>
                   </li>
                 </Fade>
                 <Fade up>
-                  <li className='ml-6 mb-3'>
+                  <li className='ml-0 lg:ml-6 mb-3'>
                     <Link href='/website-localization'>
                       <a>Website Localization</a>
                     </Link>
                   </li>
                 </Fade>
                 <Fade up>
-                  <li className='ml-6 mb-3'>
+                  <li className='ml-0 lg:ml-6 mb-3'>
                     <Link href='/transcription'>
                       <a>Transcription Services</a>
                     </Link>
                   </li>
                 </Fade>
                 <Fade up>
-                  <li className='ml-6 mb-3'>
+                  <li className='ml-0 lg:ml-6 mb-3'>
                     <Link href='/professional-proofreading'>
                       <a>Professional Proofreading</a>
                     </Link>
@@ -50,10 +56,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className='col-md-3'>
-            <div>
+          <div className='col-lg-3 col-md-6 lg:flex lg:justify-center mb-12 last:mb-0'>
+            <div className=''>
               <h4 className='text-base sm:text-lg lg:text-xl text-current mb-5'>Company</h4>
-              <ul className='text-medium'>
+              <ul className='text-medium text-accents_4'>
                 <Fade up>
                   <li className='mb-3'>
                     <Link href='/about'>
@@ -71,15 +77,15 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className='col-md-3'>
-            <div>
+          <div className='col-lg-3 col-md-6 lg:flex lg:justify-center mb-12 last:mb-0'>
+            <div className=''>
               <h4 className='text-base sm:text-lg lg:text-xl text-current mb-5'>Get in Touch</h4>
               <address className='not-italic'>
-                <ul className='text-medium'>
+                <ul className='text-medium text-accents_4'>
                   <Fade up>
                     <li className='flex items-start mb-3'>
                       <div className='text-lg text-primary-2 mr-4'>
-                        <i className='flaticon-pin'></i>
+                        <i className='flaticon-pin mt-1.5'></i>
                       </div>
                       <span>Ansori Street, Shahri Now, Kabul, Afghanistan</span>
                     </li>
@@ -89,7 +95,7 @@ const Footer = () => {
                       <div className='text-lg text-primary-2 mr-4'>
                         <i className='flaticon-phone-call'></i>
                       </div>
-                      <span>+93 780 87 57 87</span>
+                      <span>+93 781 938 546</span>
                     </li>
                   </Fade>
                   <Fade up>
@@ -97,7 +103,7 @@ const Footer = () => {
                       <div className='text-lg text-primary-2 mr-4'>
                         <i className='flaticon-envelope'></i>
                       </div>
-                      <span>info@rahrawan.af</span>
+                      <span>info@navisa.af</span>
                     </li>
                   </Fade>
                 </ul>

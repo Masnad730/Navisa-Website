@@ -7,13 +7,18 @@ import ServicesFeatures from '../components/ServicesFeatures'
 
 export default function Translation() {
   return (
-    <Layout activePage='professional-proofreading'>
+    <Layout
+      title='Professional Proofreading - Navisa Translation Services'
+      canonical='https://navisa.af/professional-proofreading/'
+      descriptionContent='Our professional proofreaders and editors deeply check and improve your text in terms of grammar, punctuation and tone to ensure that you are judged based on your knowledge and ideas'
+      activePage='professional-proofreading'
+    >
       <section className='text-white svc-bg-image'>
         <div className='pt-20 pb-10'>
           <div className='container'>
             <Fade up>
               <div className=''>
-                <h6 className='text-xs sm:text-sm lg:text-base text-white uppercase pl-16 mb-4 relative title-decorated'>
+                <h6 className='text-sm sm:text-sm lg:text-base text-white uppercase pl-16 mb-4 relative title-decorated'>
                   Services
                 </h6>
                 <h1 className='text-2xl sm:text-4xl lg:text-5xl text-white font-extrabold pl-12 mb-8'>
@@ -22,7 +27,7 @@ export default function Translation() {
               </div>
             </Fade>
             <Fade right>
-              <ul className='flex items-center text-primary-2'>
+              <ul className='flex items-center text-primary-2 text-sm sm:text-sm lg:text-base'>
                 <li className='pl-0 px-4 relative breadcrumb-arr'>
                   <Link href='/'>
                     <a className='hover:text-primary'>Home</a>
@@ -40,7 +45,7 @@ export default function Translation() {
             <div className='col-lg-4 order-2 order-lg-1'>
               <Fade right>
                 <aside className='border-2 border-accents_2'>
-                  <div className='px-4 py-6'>
+                  <div className='px-8 lg:px-2 xl:px-6 py-6'>
                     <ServicesNavMenu active='professional-proofreading' />
                   </div>
                 </aside>
@@ -49,12 +54,12 @@ export default function Translation() {
             <div className='col-lg-8 order-1 order-lg-2'>
               <Fade right>
                 <div>
-                  <img src='/images/services/proofreading.jpg' alt='' />
+                  <img src='/images/services/proofreading.jpg' alt='Professional Proofreading' />
                 </div>
               </Fade>
               <Fade up>
                 <div className='pt-10'>
-                  <p className='leading-8 mb-3 last:mb-0'>
+                  <p className='leading-8 mb-3 last:mb-0 text-sm md:text-medium lg:text-base'>
                     Your digital and physical assets including your website, blogs, official
                     documents, professional emails, marketing material, academic papers, novel,
                     manuscript, and articles reflect the standard and quality of your work as well
@@ -65,13 +70,13 @@ export default function Translation() {
                   </p>
                 </div>
                 <div>
-                  <span className='block my-4'>
+                  <span className='block my-4 text-sm md:text-medium lg:text-base'>
                     Our proofreading services include proofreading of:
                   </span>
                   <div className='row'>
                     <div className='col-xl-4 col-md-12'>
                       <h4 className='text-base sm:text-lg lg:text-xl mb-4'>Businesses</h4>
-                      <ul>
+                      <ul className='text-sm md:text-medium lg:text-base'>
                         <li className='mb-2 flex items-center'>
                           <i className='flaticon-tick mr-3'></i>
                           Official documents
@@ -88,7 +93,7 @@ export default function Translation() {
                     </div>
                     <div className='col-xl-4 col-md-12'>
                       <h4 className='text-base sm:text-lg lg:text-xl mb-4'>Academic Use</h4>
-                      <ul>
+                      <ul className='text-sm md:text-medium lg:text-base'>
                         <li className='mb-2 flex items-center'>
                           <i className='flaticon-tick mr-3'></i>
                           Books
@@ -105,7 +110,7 @@ export default function Translation() {
                     </div>
                     <div className='col-xl-4 col-md-12'>
                       <h4 className='text-base sm:text-lg lg:text-xl mb-4'>Authors</h4>
-                      <ul>
+                      <ul className='text-sm md:text-medium lg:text-base'>
                         <li className='mb-2 flex items-center'>
                           <i className='flaticon-tick mr-3'></i>
                           Novel

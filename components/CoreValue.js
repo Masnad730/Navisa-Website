@@ -8,12 +8,12 @@ const CoreValue = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-12 col-lg-6'>
-            <div className=''>
+            <div className='mb-8 lg:mb-0'>
               <Fade up>
-                <h2 className='text-xl sm:text-3xl lg:text-4xl leading-tight mb-5'>
+                <h2 className='text-2xl sm:text-3xl lg:text-4xl leading-tight mb-5'>
                   <span>Ready to Translate</span> With Navisa?
                 </h2>
-                <p className='mb-8'>
+                <p className='mb-8 text-sm md:text-medium lg:text-base'>
                   In order for us to live up to our promise of an outstanding service, each job is
                   assigned to linguists with specializations in various languages who work for our
                   company on a full-time basis.

@@ -1,8 +1,8 @@
-import { useLanguageContext } from '../contexts/languageContext'
+import { useUserEnquiryContext } from '../contexts/userEnquiryContext'
 import Loader from '../components/Loader'
 
 const EnquiryFormEN = () => {
-  const { handleChange, createInquiry, userInquiry, loading } = useLanguageContext()
+  const { handleFormChange, createInquiry, userInquiry, loading } = useUserEnquiryContext()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -15,7 +15,7 @@ const EnquiryFormEN = () => {
           <input
             name='name'
             value={userInquiry.name}
-            onChange={handleChange}
+            onChange={handleFormChange}
             type='text'
             placeholder='Name'
             required
@@ -25,7 +25,7 @@ const EnquiryFormEN = () => {
           <input
             name='phone'
             value={userInquiry.phone}
-            onChange={handleChange}
+            onChange={handleFormChange}
             type='text'
             placeholder='Phone'
           />
@@ -34,7 +34,7 @@ const EnquiryFormEN = () => {
           <input
             name='email'
             value={userInquiry.email}
-            onChange={handleChange}
+            onChange={handleFormChange}
             type='email'
             placeholder='Email'
             required
@@ -44,7 +44,7 @@ const EnquiryFormEN = () => {
           <input
             name='company'
             value={userInquiry.company}
-            onChange={handleChange}
+            onChange={handleFormChange}
             type='text'
             placeholder='Company'
           />
@@ -53,7 +53,7 @@ const EnquiryFormEN = () => {
           <textarea
             name='message'
             value={userInquiry.message}
-            onChange={handleChange}
+            onChange={handleFormChange}
             id=''
             cols='30'
             rows='5'

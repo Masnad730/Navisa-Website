@@ -1,89 +1,67 @@
-import axios from 'axios'
 import { createContext, useContext, useState } from 'react'
-import { useSnackbar } from 'react-simple-snackbar'
+import { useRouter } from 'next/router'
 
-const options = {
-  position: 'top-right',
-  style: {
-    backgroundColor: '#212529',
-    color: '#fff',
-    fontSize: '14px',
-    textAlign: 'center',
-  },
-  closeStyle: {
-    color: '#fff',
-    fontSize: '16px',
-  },
-}
 const LanguageContext = createContext()
 
 const LanguageContextProvider = ({ children }) => {
-  const [openSnackbar, closeSnackbar] = useSnackbar(options)
-  const [loading, setLoading] = useState(false)
-  const [userInquiry, setUserInquiry] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    company: '',
-    message: '',
-  })
-  const handleChange = (e) => {
-    const name = e.target.name
-    const value = e.target.value
-    setUserInquiry({ ...userInquiry, [name]: value })
+  const router = useRouter()
+  const [language, setLanguage] = useState('')
+
+  const handleLanguageChange = (e) => {
+    setLanguage(e.target.value)
+    switch (router.pathname) {
+      case '/':
+        router.push('/fa')
+        break
+      case '/about':
+        router.push('/fa/about')
+        break
+      case '/contact':
+        router.push('/fa/contact')
+        break
+      case '/translation':
+        router.push('/fa/translation')
+        break
+      case '/transcription':
+        router.push('/fa/transcription')
+        break
+      case '/website-localization':
+        router.push('/fa/website-localization')
+        break
+      case '/professional-proofreading':
+        router.push('/fa/professional-proofreading')
+        break
+      case '/fa':
+        router.push('/')
+        break
+      case '/fa/about':
+        router.push('/about')
+        break
+      case '/fa/contact':
+        router.push('/contact')
+        break
+      case '/fa/translation':
+        router.push('/translation')
+        break
+      case '/fa/transcription':
+        router.push('/transcription')
+        break
+      case '/fa/website-localization':
+        router.push('/website-localization')
+        break
+      case '/fa/professional-proofreading':
+        router.push('/professional-proofreading')
+        break
+      default:
+        router.push('/')
+    }
   }
 
-  async function createInquiry(lang) {
-    setLoading(true)
-
-    await axios
-      .post('http://localhost:1337/user-inquiries', {
-        name: userInquiry.name,
-        phone: userInquiry.phone,
-        email: userInquiry.email,
-        company: userInquiry.company,
-        message: userInquiry.message,
-      })
-      .then((res) => {
-        if (res.statusText === 'OK') {
-          if (lang === 'en') {
-            openSnackbar('Your message has been submitted.')
-          } else {
-            openSnackbar('.پیام شما موفقانه ارسال گردید')
-          }
-          setLoading(false)
-        } else {
-          if (lang === 'dr') {
-            openSnackbar('There was an error trying to send your message, Please try again.')
-          } else {
-            openSnackbar('.پیام شما موفقانه ارسال نگردید، لطفا دوباره کوشش کنید')
-          }
-          setLoading(false)
-        }
-        setUserInquiry({
-          name: '',
-          phone: '',
-          email: '',
-          company: '',
-          message: '',
-        })
-      })
-      .catch((err) => {
-        openSnackbar(
-          'There was an error trying to send your message, Please check your network connection and try again.'
-        )
-        setLoading(false)
-        console.log(err)
-      })
-  }
   return (
     <LanguageContext.Provider
       value={{
-        openSnackbar,
-        handleChange,
-        createInquiry,
-        userInquiry,
-        loading,
+        language,
+        handleLanguageChange,
       }}
     >
       {children}

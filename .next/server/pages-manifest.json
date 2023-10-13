@@ -1,0 +1,23 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/about": "pages/about.html",
+  "/api/hello": "pages/api/hello.js",
+  "/contact": "pages/contact.html",
+  "/fa/about": "pages/fa/about.html",
+  "/fa/contact": "pages/fa/contact.html",
+  "/fa": "pages/fa.html",
+  "/fa/professional-proofreading": "pages/fa/professional-proofreading.html",
+  "/fa/resources": "pages/fa/resources.html",
+  "/fa/transcription": "pages/fa/transcription.html",
+  "/fa/translation": "pages/fa/translation.html",
+  "/fa/website-localization": "pages/fa/website-localization.html",
+  "/": "pages/index.html",
+  "/professional-proofreading": "pages/professional-proofreading.html",
+  "/resources": "pages/resources.html",
+  "/transcription": "pages/transcription.html",
+  "/translation": "pages/translation.html",
+  "/website-localization": "pages/website-localization.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}

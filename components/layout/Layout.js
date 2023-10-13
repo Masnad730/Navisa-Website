@@ -16,28 +16,30 @@ const Layout = ({ children, title, canonical, descriptionContent, jsonLD, active
         <meta name='description' content={descriptionContent} />
         <meta name='keywords' content='' />
 
-        <meta property='og:title' content='Rahrawan Travels' />
+        <meta property='og:title' content='Navisa Translation Services' />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://rahrawan.af/' />
-        <meta property='og:image' content='https://rahrawan.af/images/logo.png' />
-        <meta property='og:site_name' content='Rahrawan Travels' />
+        <meta property='og:url' content='https://navisa.af/' />
+        <meta property='og:image' content='https://navisa.af/images/navisa-logo.png' />
+        <meta property='og:site_name' content='Navisa Translation Services' />
         <meta
           property='og:description'
-          content='Rahrawan Travels is a company in Afghanistan that helps people to Study, Invest and Travel abroad in the best way possible. We also help foreigners to have the best travel experience in Afghanistan.'
+          content='Navisa Translation Services (Navisa) is a local company in Afghanistan that mainly operates in the area of translation services.'
         />
-        <meta property='og:image:secure_url' content='https://rahrawan.af/images/logo.png' />
+        <meta property='og:image:secure_url' content='https://navisa.af/images/navisa-logo.png' />
 
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:title' content='Rahrawan Travels' />
+        <meta name='twitter:title' content='Navisa Translation Services' />
         <meta
           name='twitter:description'
-          content='Rahrawan Travels is a company in Afghanistan that helps people to Study, Invest and Travel abroad in the best way possible. We also help foreigners to have the best travel experience in Afghanistan.'
+          content='Navisa Translation Services (Navisa) is a local company in Afghanistan that mainly operates in the area of translation services.'
         />
-        <meta name='twitter:image' content='https://rahrawan.af/images/logo.png' />
+        <meta name='twitter:image' content='https://navisa.af/images/navisa-logo.png' />
 
-        <link rel='icon' href='/images/abr-logo.png' sizes='16/16' type='image.png' />
         <title>{title}</title>
-        <script type='application/ld+json'>{jsonLD}</script>
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
+        />
       </Head>
       <Header activePage={activePage} />
       {children}

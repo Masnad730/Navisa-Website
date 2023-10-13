@@ -9,7 +9,9 @@ import 'react-accessible-accordion/dist/fancy-example.css'
 import '../styles/base.css'
 import '../styles/main.css'
 import '../styles/grid.css'
+import ScrollToTop from '../components/ScrollToTop'
 import LanguageContextProvider from '../contexts/languageContext'
+import UserEnquiryContextProvider from '../contexts/userEnquiryContext'
 
 Router.events.on('routeChangeStart', (url) => {
   // console.log(`Loading: ${url}`)
@@ -17,11 +19,15 @@ Router.events.on('routeChangeStart', (url) => {
 })
 Router.events.on('routeChangeComplete', () => NProgress.done())
 Router.events.on('routeChangeError', () => NProgress.done())
+
 function MyApp({ Component, pageProps }) {
   return (
     <SnackbarProvider>
       <LanguageContextProvider>
-        <Component {...pageProps} />
+        <UserEnquiryContextProvider>
+          <ScrollToTop showBelow={300} />
+          <Component {...pageProps} />
+        </UserEnquiryContextProvider>
       </LanguageContextProvider>
     </SnackbarProvider>
   )
